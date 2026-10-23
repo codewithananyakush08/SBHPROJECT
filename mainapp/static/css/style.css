@@ -1,3 +1,5 @@
+body { overflow-x: hidden; }
+
 #navbar {
   min-height: 60px;      /* height: 60px ki jagah */
   background-color: #101828;
@@ -82,7 +84,9 @@
 }
 
 .project-card {
-  width: 330px;
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
   height: 260px;
   background-size: cover;
   background-position: center;
@@ -96,6 +100,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.5s;
 }
+
 
 .project-card:hover {
   transform: scale(1.03);
@@ -188,10 +193,9 @@
   color: #555;
   font-size: 14px;
 }
-
 .riya {
-  height: 140px;
-  width: 230px;
+  width: 100%;
+  min-height: 140px;
   background-color: #ea7124;
   border-radius: 5px;
 }
