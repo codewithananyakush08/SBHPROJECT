@@ -1,10 +1,15 @@
 #navbar {
-  height: 60px;
+  min-height: 60px;      /* height: 60px ki jagah */
   background-color: #101828;
   border-radius: 20px 20px 0px 0px;
 
 }
-
+#navbarNav .nav-link:hover {
+  color: #fff !important;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
 #image {
   margin-top: 100px;
 }
@@ -369,5 +374,24 @@ background-size:cover ;
   background-color: #007bff;
   border-radius: 5px;
   transition:0.3s ease;
+}
+/* mobile ke lia responsive banane ke lia*/
+@media (max-width: 768px) {
+  #image { margin-top: 40px; }
+  .ram { margin-top: 40px; }
+
+  #read1, #read2, #read3, #read4 {
+    height: auto;
+    min-height: 300px;
+    border-radius: 15px;
+  }
+
+  .ruchi, .ritika { font-size: 36px; }
+  #fifty { font-size: 40px; }
+  #priyanka { font-size: 24px; }
+
+  .subscribe-form input { width: 100%; }
+  .projects-container { justify-content: center; }
+  .card-container { justify-content: center; }
 }
 
