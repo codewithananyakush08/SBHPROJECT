@@ -132,16 +132,14 @@ body { overflow-x: hidden; }
   font-size: 60px;
   ;
 }
-
 .box {
-  height: 130px;
-  width: 250px;
+  width: 100%;
+  min-height: 130px;
   border-radius: 10px;
   background-color: #1a1a36;
   border: 1px solid #1a1a36;
-  margin-right: 30px;
+  margin-right: 0;
 }
-
 .card-container {
   display: flex;
   gap: 20px;
@@ -407,10 +405,10 @@ background-size:cover ;
 .bg-industrial  { background-image: url('../img/Industrial-Manufacturing-Hub.jpg'); }
 .bg-hotel       { background-image: url('../img/Waterfront-Hotel-spa.jpg'); }
 .bg-urban       { background-image: url('../img/Urban-Mixed-Use-Development.jpg'); }
-
 .project-card {
   width: 100%;
   max-width: 330px;
+  min-height: 260px;
   margin: 0 auto;
 }
 
