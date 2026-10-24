@@ -199,22 +199,22 @@ body { overflow-x: hidden; }
   background-color: #ea7124;
   border-radius: 5px;
 }
-
 #read1 {
-  height: 520px;
-  width: 400px;
+  min-height: 520px;
+  width: 100%;
   background-color: #ea7124;
   border-radius: 15px 0px 0px 15px;
   border: 1px solid white;
 }
-
 #read2 {
-  height: 520px;
-  width: 400px;
+  min-height: 520px;
+  width: 100%;
   background-color: white;
   border-radius: 0px 15px 15px 0px;
   border: 1px solid white;
 }
+
+
 #book1 {
   height: 45px;
   width: 45px;
