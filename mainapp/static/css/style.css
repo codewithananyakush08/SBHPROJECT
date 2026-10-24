@@ -398,4 +398,23 @@ background-size:cover ;
   .projects-container { justify-content: center; }
   .card-container { justify-content: center; }
 }
+.bg-office      { background-image: url('../img/Modern-Office-Complex.jpg'); }
+.bg-residential { background-image: url('../img/Luxury-Residential-Tower.jpg'); }
+.bg-industrial  { background-image: url('../img/Industrial-Manufacturing-Hub.jpg'); }
+.bg-hotel       { background-image: url('../img/Waterfront-Hotel-spa.jpg'); }
+.bg-urban       { background-image: url('../img/Urban-Mixed-Use-Development.jpg'); }
 
+.project-card {
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.anushka {
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  #priyanka { font-size: 24px; }
+}
