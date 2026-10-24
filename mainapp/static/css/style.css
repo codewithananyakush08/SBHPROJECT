@@ -367,7 +367,8 @@ body { overflow-x: hidden; }
 }
 #dont{
 height:400px;
-width:530px;
+width:100%;
+max-width: 530px;
 border:10px solid white;
 background-color: #fee7d3;
 background-image: url('../img/about.jpg');
@@ -383,6 +384,9 @@ background-size:cover ;
 @media (max-width: 768px) {
   #image { margin-top: 40px; }
   .ram { margin-top: 40px; }
+  #dont { height: 260px; }
+  .flag { width: 100%; min-height: 135px; background-color: #fee7d3; }   /* purani height/width hata do */
+#dont { width: 100%; max-width: 530px; }                               /* width:530px ki jagah */
 
   #read1, #read2, #read3, #read4 {
     height: auto;
