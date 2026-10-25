@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$^ha5y65!+x%ckx#yup#(8f9-r%k)i7emcd#pw6&!*s=dabjc%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('RENDER') is None
 
 ALLOWED_HOSTS = ['*']
 
@@ -86,6 +86,7 @@ DATABASES = {
            conn_max_age=600,
        )
    }
+
 
 
 # Password validation
