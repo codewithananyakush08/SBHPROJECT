@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'adminapp',
     'homeownerapp',
     'contractorapp',
+    'django.contrib.staticfiles',
+    'cloudinary_storage',
     'cloudinary',
-    'django-cloudinary-storage',
 ]
 
 MIDDLEWARE = [
