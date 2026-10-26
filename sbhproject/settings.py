@@ -28,7 +28,6 @@ DEBUG = os.environ.get('RENDER') is None
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,6 +41,8 @@ INSTALLED_APPS = [
     'adminapp',
     'homeownerapp',
     'contractorapp',
+    'cloudinary',
+    'django-cloudinary-storage',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+if os.environ.get('CLOUDINARY_URL'):
+       STORAGES = {
+           "default": {"BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage"},
+           "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"},
+       }
+
